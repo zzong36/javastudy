@@ -1,6 +1,6 @@
 package kr.ac.kopo.day03.homework;
 
-public class Homework5 {
+public class Homework05 {
 
 	public static void main(String args[]) {
 		System.out.println("구구단을 출력하세요");
