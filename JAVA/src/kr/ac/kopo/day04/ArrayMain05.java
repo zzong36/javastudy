@@ -12,10 +12,13 @@ public class ArrayMain05 {
 		
 		// 아예 다른 배열로 복사하기 위해서는 아래와 같이 코드 수행: Deep copy(깊은 복사)
 		int[] copy = new int[arr.length];
+		
 		for(int i = 0; i < arr.length; i++) {
 			
 			copy[i] = arr[i];
 		}
+		
+		// System.arraycopy(arr, 0, copy, 0, arr.length); // 이런 메소드도 있긴 함
 		
 		System.out.println("arr : " + arr );
 		System.out.println("arr : " + copy ); // 서로 다른 참조변수 주소를 가지고 있음
