@@ -16,6 +16,7 @@ public class HomeworkMain03 {
 				star++;
 			else
 				star--;
+			
 		}
 	}
 
