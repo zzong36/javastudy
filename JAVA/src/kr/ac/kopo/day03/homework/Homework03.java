@@ -6,11 +6,11 @@ public class Homework03 {
 
 		final int VELOCITY = 5;
 
-		for (int hour = 1; hour <= 22; hour++) {
+		for (int hour = 1; hour <= 30 ; hour++) {
 			if (hour * (VELOCITY - 1) < 50) {
 				System.out.printf("[%d시간후] 달행이가 올라간 총 높이: %dM%n", hour, (VELOCITY - 1) * hour);
 			} else {
-				System.out.printf("[%d시간후] 달행이가 올라간 총 높이: %dM%n", hour, (VELOCITY - 2) * (hour + 12));
+				System.out.printf("[%d시간후] 달행이가 올라간 총 높이: %dM%n", hour, (VELOCITY - 2) * (hour+4));
 			}
 		}
 		System.out.println("달팽이 탈출 성공!!");

@@ -18,12 +18,11 @@ public class Homework07 {
 				if (i <= 7) {
 					System.out.printf("%d * %d = %2d  %d * %d = %2d  %d * %d = %2d%n", i, h, i * h, i + 1, h,
 							(i + 1) * h, i + 2, h, (i + 2) * h);
-				} else if(i<10){
-					System.out.printf("%d * %d = %2d  %d * %d = %2d%n", i, h, i * h, i + 1, h,
-							(i + 1) * h);
-					
+				} else if (i < 10) {
+					System.out.printf("%d * %d = %2d  %d * %d = %2d%n", i, h, i * h, i + 1, h, (i + 1) * h);
+
 				}
-				
+
 			}
 			System.out.println();
 		}
