@@ -25,6 +25,29 @@ public class ArrayMain01 {
 			System.out.println(i + "번째 원소 : " + arr[i]);
 			
 		}
+		
+		// 각 원소 값에 10, 20, 30, 40, 50 대입
+		System.out.println("-----------------------------");
+		
+		arr[0] = 10;
+		arr[1] = 20;
+		arr[2] = 20;
+		arr[3] = 30;
+		arr[4] = 40;
+		
+		for(int i = 0; i < arr.length; i++) { // 배열 때문에 i를 쓴다
+			System.out.println(i + "번째 원소 : " + arr[i]);
+			
+		}
+		
+		System.out.println("-----------------------------");
+
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = (i+1)*10;
+				System.out.println(i + "번째 원소 : " + arr[i]);
+			
+		}
+		
 	}
 
 }
