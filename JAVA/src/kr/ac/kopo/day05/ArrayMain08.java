@@ -14,6 +14,7 @@ public class ArrayMain08 {
 			System.out.print(strArr[i] + " ");
 		}
 		*/
+		System.out.print(strArr);
 		
 		for(String str : strArr) {
 			System.out.println(str);
