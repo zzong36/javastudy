@@ -24,7 +24,7 @@ public class HandphoneMain {
 		Handphone hp3 = new Handphone();
 		hp3.name = "윤길동";
 		hp3.phoneNumber = "010-5555-6666";
-		hp3.company = "하웨이";
+		hp3.company = "화웨이";
 		
 		Handphone[] hpArr = {hp, hp2, hp3};
 		
