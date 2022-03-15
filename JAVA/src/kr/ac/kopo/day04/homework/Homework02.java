@@ -24,7 +24,19 @@ public class Homework02 {
 				System.out.print(arr[i] + " ");
 
 			}
+
 		}
+		int sum = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] % 2 == 0) {
+
+				sum += arr[i];
+			}
+		}
+
+		System.out.println();
+		System.out.print("짝수의 총합 : " + sum);
+
 		System.out.println();
 		System.out.println("< 홀수 >");
 		for (int i = 0; i < arr.length; i++) {
@@ -34,5 +46,15 @@ public class Homework02 {
 			}
 
 		}
+
+		int sum1 = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] % 2 != 0) {
+
+				sum1 += arr[i];
+			}
+		}
+		System.out.println();
+		System.out.print("홀수의 총합 : " + sum1);
 	}
 }
