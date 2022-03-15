@@ -9,14 +9,17 @@ public class Homework03 {
 		Scanner sc = new Scanner(System.in);
 
 		int[] arr = new int[10];
-		for (int i = 0; i < 5; i++) {
-			System.out.printf("%d's 정수: ", i + 1);
-			arr[i] = sc.nextInt();
-			if (arr[i] % 2 == 0) {
-			} else {
+		for (int i = 0; i < arr.length; i++) {
+			if(i < 5) {
+				
 				System.out.printf("%d's 정수: ", i + 1);
 				arr[i] = sc.nextInt();
-
+				if (arr[i] % 2 == 0) {
+				} else {
+					System.out.printf("%d's 정수: ", i + 1);
+					arr[i] = sc.nextInt();
+					
+				}
 			}
 
 		}

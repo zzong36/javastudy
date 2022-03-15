@@ -13,11 +13,12 @@ public class HomeworkMain01 {
 		for (int i = 0; i < nums.length; i++) {
 
 			System.out.print(i + 1 + "번째 정수 입력 : ");
+			
 			nums[i] = sc.nextInt();
 			sum[nums[i] % 2] += nums[i];
 
 		}
-
+		 
 		String[] title = { "짝수", "홀수" };
 		for (int mod = 0; mod <= 1; mod++) {
 			System.out.println("<" + title[mod] + ">");
