@@ -43,12 +43,12 @@ public class Homework05 {
 
 			for (int i = 0; i < nums.length; i++) {
 
-				if (i + index < 5) {
+				if (index - i >= 0) {
 
-					copy[i] = nums[i + index];
+					copy[i] = nums[index - i];
 				} else {
 
-					copy[i] = nums[i + index - 5];
+					copy[i] = nums[index -i +5];
 				}
 
 			}
