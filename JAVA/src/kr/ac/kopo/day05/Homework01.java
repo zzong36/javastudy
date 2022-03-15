@@ -1,5 +1,7 @@
 package kr.ac.kopo.day05;
 
+
+
 import java.util.Scanner;
 
 public class Homework01 {
