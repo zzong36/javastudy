@@ -14,16 +14,19 @@ public class Homework02 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("아이스크림 몇 개 구입할거야?: ");
 		int loc = sc.nextInt();
+		sc.nextLine(); // buffer를 비운다
 		
 		Icecream[] ic = new Icecream[loc];
 		
+		// System.out.println("loc : " + loc + " ic.length : " + ic.length);
+		
 		for(int i = 0; i < ic.length; i++) {
-			System.out.printf("*** %d번째 아이스크림 구매정보***%n", i+1);
 			ic[i] = new Icecream();
+			System.out.printf("*** %d번째 아이스크림 구매정보***%n", i+1);
 			System.out.print("아이스크림명: ");
-			ic[i].name = sc.next();
+			ic[i].name = sc.nextLine(); // sc.next는 space를 치는 순간 오류가 남
 			System.out.print("아이스크림 가격: ");
-			ic[i].price = sc.nextInt();	
+			ic[i].price = Integer.parseInt(sc.nextLine());
 			}
 		
 		System.out.printf("총 %d개의 아이스크림 구매정보 출력%n", loc);
@@ -42,6 +45,11 @@ public class Homework02 {
 		
 		
 		
+	}
+
+	private static String nextInt() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 			
 
