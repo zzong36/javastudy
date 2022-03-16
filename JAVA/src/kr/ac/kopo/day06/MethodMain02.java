@@ -12,8 +12,46 @@ class 고양이 {
 	
 }
 
+class Method{
+	// 메소드 오버로딩(overloading)
+	// 같은 클래스 내에서 메소드명이 같으면서 매개변수의 개수나 타입이 서로 다른 것
+	void call() {
+		System.out.println("call() 메소드 호출...");
+	}
+	
+	void call(int i) { //JAVA는 메소드를 구분하는 구분자가 메소드 이름 + 매개변수 타입으로 구분하므로 다른 매개변수 타입이면 다른 메소드로 인식한다.
+		System.out.println("call(int) 메소드 호출...");
+	}
+	
+	void call(double d) {
+		
+		System.out.println("call(double) 메소드 호출...");
+	}
+	
+	void call(boolean d) {
+		
+		System.out.println("call(boolean) 메소드 호출...");
+	}
+	
+	void call(String str, int n) {
+		
+		System.out.println("call(string, int) 메소드 호출...");
+	}
+	
+	
+	
+	
+}
+
 public class MethodMain02 {
 	public static void main(String args[]) {
+		
+		Method m = new Method();
+		m.call(); 
+		m.call(10);
+		m.call(10.1);
+		m.call(true);
+		m.call("hello", 5);
 		
 		고양이 나비 = new 고양이();
 		
