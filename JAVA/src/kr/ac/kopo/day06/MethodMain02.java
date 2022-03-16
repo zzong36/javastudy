@@ -51,11 +51,12 @@ public class MethodMain02 {
 		m.call(10);
 		m.call(10.1);
 		m.call(true);
-		m.call("hello", 5);
+		m.call("hello", 5); // 순서가 중요하다 m.call(5, "hello") 안 됨
 		
 		고양이 나비 = new 고양이();
 		
 		나비.냐옹거린다(); // 멤버변수와 비슷하군
+		
 	}
 	
 	
