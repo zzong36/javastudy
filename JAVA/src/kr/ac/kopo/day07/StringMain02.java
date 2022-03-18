@@ -28,6 +28,44 @@ public class StringMain02 {
 
 		String[] names = {"홍길동", "홍길순", "홍길동", "박길동", "홍가네", "윤길동", "한길홍"};
 		
+		System.out.println("<이름이 홍길동인 사람 출력>");
+		for(String name : names) {
+			if(name.equals("홍길동")) {
+				System.out.println(name);
+			}
+		}
+		
+		System.out.println("< 성이 홍씨인 사람 출력 >");
+		for(String name : names) {
+			if(name.startsWith("홍")) {
+				System.out.println(name);
+			}
+		}
+		
+		System.out.println("< 이름이 길동인 사람 출력 >");
+		for(String name : names) {
+			if(name.endsWith("길동")) {
+				System.out.println(name);
+			}
+		}
+		
+		System.out.println("< 이름에 홍이 포함된 사람 출력 >");
+		for(String name : names) {
+			if(name.contains("홍")) {
+				System.out.println(name);
+			}
+		}
+		
+		str = "apple";
+		str2 = "banana";
+		int compare = str.compareTo(str2);
+		if(str.compareTo(str2) == 0){
+			System.out.println(str + " == " + str2);	
+		} else if(compare > 0){
+			System.out.println(str + ">" + str2);
+		} else {
+			System.out.println(str + " < "  + str2);
+		}
 		
 	}
 
