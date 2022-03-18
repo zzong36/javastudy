@@ -23,6 +23,11 @@ public class StringMain02 {
 			System.out.println("문자열 비교: 다르다");
 		}
 		
+		System.out.println("대소문자관계없이 문자열 비교 : " 
+				+ str.equalsIgnoreCase(str2));
+
+		String[] names = {"홍길동", "홍길순", "홍길동", "박길동", "홍가네", "윤길동", "한길홍"};
+		
 		
 	}
 
