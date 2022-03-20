@@ -47,10 +47,7 @@ public class Homework02 {
 		
 	}
 
-	private static String nextInt() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 			
 
-}
+
