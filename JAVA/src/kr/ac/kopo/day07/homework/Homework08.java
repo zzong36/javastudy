@@ -20,6 +20,7 @@ public class Homework08 {
 		cc.subtract(i, j);
 		cc.multiply(i, j);
 		cc.divide(i, j);
+		cc.check(i, j);
 		
 	}
 
