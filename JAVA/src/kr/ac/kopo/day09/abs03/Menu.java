@@ -1,4 +1,4 @@
-package kr.ac.kopo.day09.abs02;
+package kr.ac.kopo.day09.abs03;
 
 import java.util.Scanner;
 
@@ -13,23 +13,40 @@ public class Menu {
 	}
 	
 	public void print(String type) {
-		
+		Printer p = null;
 		switch(type) {
 		case "1" :
-			LGPrinter lg = new LGPrinter();
-			lg.print();
+			p = new LGPrinter(); // LGPrinter가 아니라 
 			break;
 		case "2" :
-			SamsungPrinter sam = new SamsungPrinter();
-			sam.print();
+			p = new SamsungPrinter();
 			break;
 		case "3" :
-			HPPrinter hp = new HPPrinter();
-			hp.print(); //  강제성을 부여하기 위해서는 abstract를 이용해야 함(abs03으로 이어짐)
+			p = new HPPrinter();
 			break;
 			
 		}
 		
+		if(p != null) {
+			p.print();
+		}
+		
+		/*
+		switch(type) {
+		case "1" :
+			Printer lg = new LGPrinter(); // LGPrinter가 아니라 
+			lg.print();
+			break;
+		case "2" :
+			Printer sam = new SamsungPrinter();
+			sam.print();
+			break;
+		case "3" :
+			Printer hp = new HPPrinter();
+			hp.print();
+			break;
+		}
+		 */
 	}
 	
 	public void process() {
