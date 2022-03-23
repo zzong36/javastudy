@@ -34,7 +34,7 @@ public class CastMain01 {
 	
 	public static void main(String[] args) {
 
-		// print(new Parent());
+		 print(new Parent()); // Parent의 인스턴스 객체를 생성하고 print한다는 뜻?
 		// print(new Child01());
 		//print(new Child02());
 		
@@ -43,7 +43,6 @@ public class CastMain01 {
 		
 		
 		/*
-		 * 
 		Child01 c01 = new Child01();
 		print(c01);
 		
