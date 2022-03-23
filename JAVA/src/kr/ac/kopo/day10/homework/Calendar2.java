@@ -31,6 +31,7 @@ class Calendar2 {
 			System.out.println("년도를 선택하세요: ");
 			year = sc.nextInt();
 			printYear();
+			this.menu();
 			break;
 
 		case 2:
@@ -39,6 +40,7 @@ class Calendar2 {
 			System.out.println("월을 선택하세요");
 			month = sc.nextInt();
 			printMonth();
+			this.menu();
 			break;
 
 		case 3:
