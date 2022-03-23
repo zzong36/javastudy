@@ -17,26 +17,29 @@ public class Practice {
 
 		Calendar c = Calendar.getInstance();
 
-		c.set(year, month - 1, 1);
-		day = c.get(Calendar.DAY_OF_WEEK);
-		System.out.println(day);
 
-		int lastday = c.getActualMaximum(Calendar.DATE);
-		System.out.println(lastday);
-
-		System.out.printf("<%d년 %d월>%n", year, month);
-		System.out.println("일  월  화  수  목  금  토");
-
-		for (int i = 1; i <= 31; i += 7) {
-			for (int j = i; j <= i + 6; j++) {
-				if (j >= 1 && j < day) {
-					System.out.print("   ");
-				} else if(j <= lastday+day-1){
-					System.out.printf("%02d ", j-day+1);
-				} 
+		for(month= 1; month <= 12; month++) {
+			
+			c.set(year, month - 1, 1);
+			day = c.get(Calendar.DAY_OF_WEEK);
+			System.out.println(day);
+			
+			int lastday = c.getActualMaximum(Calendar.DATE);
+			System.out.println(lastday);
+			System.out.printf("<%d년 %d월>%n", year, month);
+			System.out.println("일  월  화  수  목  금  토");
+			
+			for (int i = 1; i <= 31; i += 7) {
+				for (int j = i; j <= i + 6; j++) {
+					if (j >= 1 && j < day) {
+						System.out.print("   ");
+					} else if(j <= lastday+day-1){
+						System.out.printf("%02d ", j-day+1);
+					} 
+				}
+				System.out.println();
+				
 			}
-			System.out.println();
-
 		}
 
 	}
