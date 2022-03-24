@@ -2,7 +2,7 @@ package kr.ac.kopo.day11;
 
 import java.util.Random;
 
-public class ExceptionMain04 {
+public class ExceptionMain05 {
 
 	public static void main(String[] args) {
 
@@ -16,8 +16,8 @@ public class ExceptionMain04 {
 			String str = "Hello";
 			System.out.println("str: " + str);
 			System.out.println(str.charAt(10)); // 10번지에 있는것 찾아봄
-		} catch (ArithmeticException | StringIndexOutOfBoundsException ae) { // 예외가 발생해도
-			System.out.println("예외발생 : " + ae.getMessage()); // 에러에 대한 설명을 알려줌
+		} catch (Exception e) { // 예외가 발생해도
+			System.out.println("예외발생 : " + e.getMessage()); // 에러에 대한 설명을 알려줌
 //			e.printStackTrace();
 		}
 		System.out.println("main end..."); // 예외가 발생하면 14줄은 처리되지 않는다.
