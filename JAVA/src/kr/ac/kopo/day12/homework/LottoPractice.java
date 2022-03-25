@@ -9,7 +9,7 @@ public class LottoPractice {
 		int lottoArr[] = new int[45];
 
 		for (int i = 0; i < lottoArr.length; i++) {
-			lottoArr[i] = (int) (Math.random() * 45)+1;
+			lottoArr[i] = (int) (Math.random() * 45) + 1;
 
 		}
 
@@ -22,14 +22,10 @@ public class LottoPractice {
 
 		System.out.println();
 		System.out.print(Arrays.toString(printArr));
-		
-		for(int i = 0; i < printArr.length; i++) {
-			int search = printArr[i];
-		}
-		
-		if()
+
 		
 		
+
 	}
 
 }
