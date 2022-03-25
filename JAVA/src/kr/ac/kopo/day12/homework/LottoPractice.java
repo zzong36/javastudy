@@ -23,9 +23,15 @@ public class LottoPractice {
 		System.out.println();
 		System.out.print(Arrays.toString(printArr));
 
-		
-		
+		for (int i = 0; i < printArr.length; i++) {
+			for (int j = 0; j < printArr.length; j++) {
 
+				if (printArr[i] == printArr[j] && i != j) {
+					
+				}
+			}
+
+		}
 	}
 
 }
