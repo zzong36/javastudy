@@ -7,15 +7,16 @@ public class MapMain03 {
 		Member m = new Member("홍길동", "010-1111-2222");
 		Member m2 = new Member("홍길동", "010-1111-2222");
 		
-		if(m.equals(m2)) {	 // 실제로 주소값을 비교한다. 내용이 같은지를 보려면 equals method를 오버라이딩 해야 한다.  
-			
+		if(m.equals(m2)) {	 // 실제로 주소값을 비교. 내용이 같은지를 보려면 equals method를 오버라이딩 해야 한다.  
+		System.out.println("m == m2");	
 		} else {
 			System.out.println("m != m2");
 		}
-		
-		
-		}
 	}
+}	
+		
+	
+
 
 /*
 		String s01 = new String("hello");
