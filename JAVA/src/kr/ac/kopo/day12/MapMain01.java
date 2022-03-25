@@ -1,7 +1,6 @@
 package kr.ac.kopo.day12;
 
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
@@ -52,11 +51,19 @@ public class MapMain01 {
 		System.out.println("<---------------------------------->");
 		System.out.println("아이디\t 패스워드 ");
 		System.out.println("<---------------------------------->");
+
+		Set<String> keys = map.keySet(); // key만 모아서 set으로 만들어 줌
+		for(String key : keys) {
+			System.out.println(key + "\t" + map.get(key));
+		}
 		
+		/*
+		 * 
 		Set<Map.Entry<String, String>> set = map.entrySet(); // map 안의 내부 클래스 entry class 안에 존재
 		for(Entry<String, String> e: set) {
 			System.out.println(e.getKey() + "\t" + e.getValue());
 		}
+		 */
 		
 	}
 }
