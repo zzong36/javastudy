@@ -1,37 +1,20 @@
 package kr.ac.kopo.day12.homework;
 
-import java.util.Arrays;
+import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 public class LottoPractice {
 
 	public static void main(String[] args) {
 
-		int lottoArr[] = new int[45];
+		Set<Integer> set = new HashSet<>();
 
-		for (int i = 0; i < lottoArr.length; i++) {
-			lottoArr[i] = (int) (Math.random() * 45) + 1;
-
+		for (int i = 0; set.size() < 6; i++) {
+			set.add((int) (Math.random() * 45) + 1);
 		}
 
-		System.out.print(Arrays.toString(lottoArr));
-
-		int[] printArr = new int[6];
-		for (int i = 0; i < printArr.length; i++) {
-			printArr[i] = lottoArr[i];
-		}
-
-		System.out.println();
-		System.out.print(Arrays.toString(printArr));
-
-		for (int i = 0; i < printArr.length; i++) {
-			for (int j = 0; j < printArr.length; j++) {
-
-				if (printArr[i] == printArr[j] && i != j) {
-					
-				}
-			}
-
-		}
+		System.out.print(set);
 	}
-
 }
