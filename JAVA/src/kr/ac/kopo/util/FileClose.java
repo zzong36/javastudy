@@ -2,6 +2,8 @@ package kr.ac.kopo.util;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.Reader;
+import java.io.Writer;
 
 public class FileClose { // close 하는게 목적
 
@@ -38,5 +40,24 @@ public class FileClose { // close 하는게 목적
 		close(os);
 	}
 	
+	public static void close(Reader r) {
+		if (r != null) {
+			try {
+				r.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public static void close(Writer w) {
+		if (w != null) {
+			try {
+				w.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
 	
 }
