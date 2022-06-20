@@ -27,7 +27,7 @@ public class WrapperMain {
 		Integer i2 = new Integer(100);
 		Integer i5 = Integer.valueOf(100);
 		Integer i3 = 100;	// auto boxing: JVM이 알아서 new Integer(100)로 알아서 잘 바꿔줌
-		int i4 = new Integer(100); // auto unboxing
+		int i4 = new Integer(100); // auto unboxing wows
 		
 		System.out.println(Integer.parseInt("123") + 100); 	// return 값이 기본자료형
 		System.out.println(Integer.valueOf("123") + 100);	// return 값이 Wrapper class 참조자료형

@@ -4,9 +4,8 @@ public class LottoMain {
 	
 	public static void main(String[] args) {
 		
-		LottoStart ls = new LottoStart();
-		
-		ls.start();
+		LottoUtil lu = new LottoUtil();
+		lu.start();
 	}
 
 }
