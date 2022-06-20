@@ -38,7 +38,7 @@ public class IOMain03 {
 			e.printStackTrace();
 		} finally {
 			try {
-//				fis.close(); // 아래의 fos.close와 함께 묶으면 안됨 why?
+				fis.close(); // 아래의 fos.close와 함께 묶으면 안됨 why?
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
